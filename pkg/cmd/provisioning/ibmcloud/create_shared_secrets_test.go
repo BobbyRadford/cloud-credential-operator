@@ -129,9 +129,7 @@ spec:
     kind: IBMCloudProviderSpec
   secretRef:
     namespace: %s
-    name: %s
-  serviceAccountNames:
-  - testServiceAccount1`
+    name: %s`
 
 	credReq := fmt.Sprintf(credReqTemplate, crName, targetSecretNamespace, targetSecretName)
 

@@ -5,8 +5,11 @@ import (
 )
 
 type options struct {
-	TargetDir      string
-	CredRequestDir string
+	TargetDir       string
+	Name            string
+	CredRequestDir  string
+	ResourceGroupID string
+	DryRun          bool
 }
 
 // NewIBMCloudCmd implements the "ibmcloud" subcommand for the credentials provisioning
